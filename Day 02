@@ -1,0 +1,117 @@
+# Day 02 - Linux Architecture, Processes and systemd
+
+## Linux Architecture
+
+### Kernel
+
+* Core of the Linux operating system.
+* Manages CPU, Memory, Disk and Devices.
+* Acts as a bridge between hardware and software.
+
+### User Space
+
+* Area where applications and users run.
+* Examples: Bash, Nginx, Docker, Python.
+
+### systemd (Init System)
+
+* First process started by Linux (PID 1).
+* Starts and manages system services.
+* Handles service restarts and boot processes.
+
+---
+
+## Process Management
+
+### What is a Process?
+
+* A running instance of a program.
+* Each process has a unique Process ID (PID).
+
+### Process Creation
+
+* New processes are created using fork().
+* Parent process creates a child process.
+
+---
+
+## Process States
+
+### Running
+
+* Process is currently executing on CPU.
+
+### Sleeping
+
+* Waiting for an event or resource.
+
+### Stopped
+
+* Process execution is paused.
+
+### Zombie
+
+* Process has finished but still exists in the process table.
+
+### Orphan
+
+* Parent process terminated before the child process.
+
+---
+
+## What is systemd?
+
+systemd is the service manager used by most modern Linux distributions.
+
+### Common systemd Commands
+
+* `systemctl status nginx` → Check service status
+* `systemctl start nginx` → Start service
+* `systemctl stop nginx` → Stop service
+* `systemctl restart nginx` → Restart service
+* `journalctl -u nginx` → View service logs
+
+---
+
+## Virtualization
+
+Virtualization allows multiple operating systems to run on a single physical machine.
+
+### Hypervisor
+
+Software that creates and manages virtual machines.
+
+#### Type 1 Hypervisor
+
+* Runs directly on hardware.
+* Example: VMware ESXi
+
+#### Type 2 Hypervisor
+
+* Runs on top of an operating system.
+* Example: VirtualBox
+
+### VirtualBox
+
+* Free and open-source hypervisor.
+* Used for running Ubuntu, CentOS, Kali Linux, etc.
+* Helpful for Linux and DevOps practice.
+
+---
+
+## Daily Useful Commands
+
+* `ps aux` → Show running processes
+* `top` → Real-time CPU and memory usage
+* `htop` → Interactive process viewer
+* `kill -9 PID` → Force stop a process
+* `systemctl status nginx` → Check service status
+
+---
+
+## Why This Matters for DevOps
+
+* Debug crashed services quickly
+* Analyze system performance
+* Manage Linux servers effectively
+* Troubleshoot production issues
