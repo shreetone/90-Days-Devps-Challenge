@@ -1,0 +1,13 @@
+🚀 Day 04 of my 90 Days Linux & DevOps Challenge
+
+Today I practiced Linux Processes, Services, and Logs.
+
+✅ Process Commands: ps, pgrep, top
+✅ Service Commands: systemctl status, systemctl list-units
+✅ Log Commands: journalctl, tail
+
+I also learned a basic troubleshooting workflow to check processes, services, and logs when an issue occurs.
+
+Learning Linux one day at a time! 🐧
+
+#90DaysOfDevOps #Linux #DevOps #CloudComputing #AWS #LearningInPublic
