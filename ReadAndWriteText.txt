@@ -1,0 +1,29 @@
+# Day 06 - Linux Fundamentals: Read and Write Text Files
+
+## Commands Used
+
+touch notes.txt
+- Created an empty file
+
+echo "text" > notes.txt
+- Wrote text to file
+
+echo "text" >> notes.txt
+- Appended text to file
+
+cat notes.txt
+- Displayed complete file
+
+head -n 2 notes.txt
+- Displayed first 2 lines
+
+tail -n 2 notes.txt
+- Displayed last 2 lines
+
+tee -a notes.txt
+- Displayed and appended text simultaneously
+
+## Learning
+
+Files are used to store logs, configurations and scripts.
+Reading and writing files is an important DevOps skill.
