@@ -1,0 +1,66 @@
+# Linux Commands Cheat Sheet
+
+## File System Commands
+
+| Command | Usage                      |
+| ------- | -------------------------- |
+| pwd     | Show current directory     |
+| ls      | List files and directories |
+| ls -la  | Show detailed file listing |
+| cd      | Change directory           |
+| mkdir   | Create directory           |
+| rmdir   | Remove empty directory     |
+| touch   | Create empty file          |
+| cp      | Copy files/directories     |
+| mv      | Move or rename files       |
+| rm      | Delete files               |
+| find    | Search for files           |
+| cat     | Display file content       |
+| head    | Show first lines of a file |
+| tail    | Show last lines of a file  |
+
+## Process Management Commands
+
+| Command     | Usage                        |
+| ----------- | ---------------------------- |
+| ps          | Display running processes    |
+| ps -ef      | Show all running processes   |
+| top         | Real-time process monitoring |
+| htop        | Interactive process viewer   |
+| kill PID    | Terminate a process          |
+| kill -9 PID | Force kill a process         |
+| pgrep       | Find process by name         |
+| jobs        | Show background jobs         |
+| bg          | Run job in background        |
+| fg          | Bring job to foreground      |
+
+## Networking Commands
+
+| Command             | Usage                      |
+| ------------------- | -------------------------- |
+| ping google.com     | Check network connectivity |
+| ip addr             | Show IP addresses          |
+| curl URL            | Fetch data from URL        |
+| wget URL            | Download files             |
+| dig google.com      | DNS lookup                 |
+| nslookup google.com | Query DNS records          |
+| netstat -tulnp      | Show listening ports       |
+| ss -tulnp           | Display socket statistics  |
+
+## Disk & System Commands
+
+| Command  | Usage                   |
+| -------- | ----------------------- |
+| df -h    | Show disk usage         |
+| du -sh * | Show directory sizes    |
+| free -h  | Display memory usage    |
+| uname -a | Show system information |
+| hostname | Display system hostname |
+
+## Why These Commands Matter
+
+* Inspect servers quickly
+* Troubleshoot network issues
+* Monitor processes and resources
+* Manage files and logs
+* Essential for Linux and DevOps work
