@@ -1,0 +1,84 @@
+# 🚀 Day 07 – Linux File System Hierarchy & Scenario-Based Practice
+
+## ✅ What I Learned Today
+
+Today I focused on understanding the Linux File System Hierarchy and how a DevOps Engineer approaches troubleshooting.
+
+### 📂 Linux File System Hierarchy
+
+I explored the purpose of these important directories:
+
+* `/` – Root directory, the starting point of the Linux file system.
+* `/home` – Stores user home directories.
+* `/root` – Home directory of the root user.
+* `/etc` – Contains system configuration files.
+* `/var/log` – Stores application and system log files.
+* `/tmp` – Used for temporary files.
+* `/bin` – Essential Linux commands.
+* `/usr/bin` – User-installed command binaries.
+* `/opt` – Optional and third-party applications.
+
+### 💻 Hands-on Practice
+
+I practiced the following commands:
+
+```bash
+ls -l /
+ls -l /home
+ls -l /etc
+cat /etc/hostname
+ls -l /var/log
+du -sh /var/log/* | sort -h | tail -5
+ls -la ~
+which ls
+```
+
+### 🔧 Scenario-Based Troubleshooting
+
+Today I also practiced solving common Linux troubleshooting scenarios:
+
+✅ Diagnosing a service that fails to start
+
+```bash
+systemctl status <service>
+journalctl -u <service> -n 50
+systemctl is-enabled <service>
+```
+
+✅ Finding processes using high CPU
+
+```bash
+top
+ps aux --sort=-%cpu | head -10
+```
+
+✅ Viewing service logs
+
+```bash
+journalctl -u ssh -n 50
+journalctl -u ssh -f
+```
+
+✅ Fixing file permission issues
+
+```bash
+ls -l backup.sh
+chmod +x backup.sh
+./backup.sh
+```
+
+## 🎯 Key Takeaways
+
+* Every Linux system follows a hierarchical directory structure.
+* Configuration files are mainly stored in `/etc`.
+* Logs are stored in `/var/log`, making them the first place to check during troubleshooting.
+* Understanding where files live makes debugging much faster.
+* Troubleshooting is about following a logical process, not memorizing commands.
+
+## 📈 Progress
+
+✅ Day 07 Completed
+
+Every day I'm building stronger Linux fundamentals to prepare for Cloud and DevOps roles.
+
+#90DaysOfDevOps #Linux #DevOps #CloudComputing #AWS #GitHub #LearningInPublic #OpenSource #SystemAdministration
