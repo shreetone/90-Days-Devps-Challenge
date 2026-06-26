@@ -1,0 +1,52 @@
+# 🚀 Day 08 – Cloud Server Setup: AWS EC2, Docker & Nginx
+
+Today was a huge milestone in my **90 Days DevOps Challenge** because I deployed my first web server on a real cloud instance.
+
+## ☁️ What I Did Today
+
+✅ Launched an Ubuntu EC2 instance on AWS
+✅ Connected securely using SSH with a PEM key
+✅ Updated the Linux server
+✅ Installed Docker and verified the installation
+✅ Installed and started the Nginx web server
+✅ Verified that the Nginx service was running successfully
+✅ Explored Nginx access and error logs
+✅ Learned how to save logs into a separate file for troubleshooting
+
+## 💻 Commands I Practiced
+
+```bash
+ssh -i Shree.pem ubuntu@<public-ip>
+sudo apt update
+sudo apt upgrade -y
+sudo apt install docker.io -y
+docker --version
+sudo docker run hello-world
+sudo apt install nginx -y
+sudo systemctl status nginx
+sudo systemctl start nginx
+sudo systemctl enable nginx
+curl localhost
+sudo cat /var/log/nginx/access.log
+sudo cat /var/log/nginx/error.log
+sudo nginx -t
+sudo ss -tulnp | grep :80
+```
+
+## 🎯 Key Learnings
+
+* Learned how to connect to a cloud server using SSH.
+* Understood how to install and manage services on a Linux server.
+* Learned to verify whether a service is running using `systemctl`.
+* Explored Nginx log files for troubleshooting.
+* Gained hands-on experience with a real AWS EC2 instance instead of a local virtual machine.
+
+## 💡 Biggest Takeaway
+
+Today I realized that DevOps is much more than writing commands. It's about provisioning servers, managing services, verifying deployments, and troubleshooting issues using logs. Working on a real cloud server gave me practical experience that closely matches real production environments.
+
+### ✅ Day 08 Completed
+
+Every day brings me one step closer to becoming a Cloud & DevOps Engineer.
+
+#90DaysOfDevOps #AWS #EC2 #Linux #Docker #Nginx #CloudComputing #DevOps #GitHub #LearningInPublic #OpenToWork
