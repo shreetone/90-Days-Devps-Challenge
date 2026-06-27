@@ -1,0 +1,77 @@
+# 🚀 Day 09 – Linux User & Group Management Challenge
+
+Today I explored one of the most important Linux administration topics: **User and Group Management**.
+
+Instead of just learning commands, I practiced how multiple users can securely collaborate on the same Linux system.
+
+## 👨‍💻 What I Practiced
+
+✅ Created multiple users:
+
+* tokyo
+* berlin
+* professor
+* nairobi
+
+✅ Created groups:
+
+* developers
+* admins
+* project-team
+
+✅ Assigned users to different groups using `usermod`.
+
+✅ Verified user and group information using:
+
+* `id`
+* `groups`
+* `/etc/passwd`
+* `/etc/group`
+
+## 📁 Shared Directory Management
+
+I also created shared project directories and configured:
+
+* Group ownership using `chgrp`
+* Directory permissions using `chmod 775`
+* Tested file creation as different users to understand Linux permissions.
+
+## 💻 Commands I Used
+
+```bash
+sudo useradd -m username
+sudo passwd username
+sudo groupadd developers
+sudo groupadd admins
+sudo groupadd project-team
+sudo usermod -aG developers tokyo
+sudo usermod -aG developers,admins berlin
+sudo usermod -aG admins professor
+groups username
+id username
+sudo mkdir -p /opt/dev-project
+sudo chgrp developers /opt/dev-project
+sudo chmod 775 /opt/dev-project
+sudo -u tokyo touch /opt/dev-project/file.txt
+ls -ld /opt/dev-project
+cat /etc/passwd
+cat /etc/group
+```
+
+## 🎯 Key Learnings
+
+* Users and groups are essential for managing access in Linux.
+* Group permissions make collaboration secure and efficient.
+* The `775` permission allows the owner and group members to read, write, and execute, while others can only read and execute.
+* Verifying permissions with `ls -l`, `id`, and `groups` is an important troubleshooting step.
+* Small permission mistakes can prevent users from accessing shared resources, making verification a key part of Linux administration.
+
+## 💡 Biggest Takeaway
+
+Today I learned that Linux security is built around **users, groups, and permissions**. Properly managing them is a core responsibility of every Linux System Administrator and DevOps Engineer because it helps teams collaborate securely while protecting system resources.
+
+### ✅ Day 09 Completed
+
+Every challenge is helping me strengthen my Linux fundamentals and preparing me for real-world DevOps and Cloud environments.
+
+#90DaysOfDevOps #Linux #DevOps #AWS #SystemAdministration #UserManagement #LinuxPermissions #CloudComputing #GitHub #LearningInPublic #OpenToWork
