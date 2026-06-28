@@ -1,0 +1,45 @@
+# 🚀 Day 10 – File Permissions & File Operations Challenge
+
+Today I explored one of the core Linux administration concepts: **File Permissions**.
+
+## 💻 What I Practiced
+
+✅ Created files using `touch`, `echo`, and `vim`
+
+✅ Read files using:
+
+* `cat`
+* `head`
+* `tail`
+* `vim` (read-only mode)
+
+✅ Learned Linux permission structure:
+
+* Read (r = 4)
+* Write (w = 2)
+* Execute (x = 1)
+
+✅ Modified permissions using `chmod`
+
+* Made a shell script executable
+* Created a read-only file
+* Assigned custom permissions (`640` and `755`)
+* Created directories with appropriate access
+
+## 📚 Key Learnings
+
+* Linux permissions control who can read, write, and execute files.
+* `chmod` is essential for managing file security.
+* Numeric permissions like `755` and `640` provide fine-grained access control.
+* Shell scripts require execute permission before they can run.
+* Understanding permissions is fundamental for Linux System Administration and DevOps.
+
+## 🎯 Biggest Takeaway
+
+Today I realized that file permissions are one of the most important security features in Linux. Correct permissions help protect files while allowing the right users to access and execute them safely.
+
+### ✅ Day 10 Completed
+
+Every day I'm building stronger Linux skills and preparing myself for a career in Cloud and DevOps.
+
+#90DaysOfDevOps #Linux #DevOps #CloudComputing #AWS #LinuxPermissions #SystemAdministration #LearningInPublic #GitHub #OpenToWork
