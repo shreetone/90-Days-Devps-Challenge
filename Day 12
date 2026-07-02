@@ -1,0 +1,178 @@
+# Day 12 – Linux Revision (Days 01–11)
+
+## Objective
+
+Today was a revision day. I reviewed the Linux fundamentals I learned over the past 11 days by practicing commands, revisiting concepts, and solving small troubleshooting scenarios.
+
+---
+
+# Topics Revised
+
+* Linux Basics
+* Linux Architecture
+* File System Hierarchy
+* Processes & Services
+* systemd
+* Nginx
+* File Permissions
+* File Ownership
+* Users & Groups
+* Linux Troubleshooting
+
+---
+
+# Commands Practiced
+
+## System Information
+
+```bash
+uname -a
+cat /etc/os-release
+hostname
+```
+
+## File Operations
+
+```bash
+pwd
+ls -la
+mkdir
+touch
+cp
+mv
+rm
+cat
+```
+
+## Process Management
+
+```bash
+ps aux
+top
+kill
+kill -9
+```
+
+## Service Management
+
+```bash
+systemctl status nginx
+systemctl restart nginx
+journalctl -u nginx
+```
+
+## Networking
+
+```bash
+ping google.com
+ip addr
+ss -tulpn
+curl http://localhost
+```
+
+## Memory & Disk
+
+```bash
+free -h
+df -h
+du -sh
+```
+
+## Users & Permissions
+
+```bash
+whoami
+id
+groups
+chmod
+chown
+chgrp
+```
+
+---
+
+# Self Check
+
+## 1. Which three commands save me the most time?
+
+* `systemctl status` – Quickly checks if a service is running.
+* `journalctl` – Helps identify service errors through logs.
+* `ps aux` – Shows all running processes.
+
+---
+
+## 2. How do I check if a service is healthy?
+
+```bash
+systemctl status nginx
+journalctl -u nginx -n 20
+curl http://localhost
+```
+
+These commands help verify the service status, review recent logs, and test whether the application is responding.
+
+---
+
+## 3. How do I safely change ownership and permissions?
+
+Example:
+
+```bash
+sudo chown jotir:devops app.log
+chmod 644 app.log
+```
+
+Always verify changes using:
+
+```bash
+ls -l app.log
+```
+
+---
+
+## 4. What will I improve over the next three days?
+
+* Shell Scripting
+* Linux Networking
+* Real-world troubleshooting
+
+---
+
+# Key Takeaways
+
+* Linux is the foundation of DevOps.
+* Understanding processes and services is essential for troubleshooting.
+* Logs are the first place to look when debugging issues.
+* File permissions and ownership are important for system security.
+* Regular revision helps build confidence and command-line speed.
+
+---
+
+# Commands I Can Confidently Use
+
+* `pwd`
+* `ls -la`
+* `mkdir`
+* `touch`
+* `cp`
+* `mv`
+* `rm`
+* `cat`
+* `ps aux`
+* `top`
+* `systemctl`
+* `journalctl`
+* `free -h`
+* `df -h`
+* `ping`
+* `curl`
+* `ss -tulpn`
+* `chmod`
+* `chown`
+* `chgrp`
+
+---
+
+## Conclusion
+
+Day 12 was focused on strengthening my Linux fundamentals. Revisiting the concepts and practicing commands improved my confidence in troubleshooting Linux systems and prepared me for the next phase of my DevOps journey.
