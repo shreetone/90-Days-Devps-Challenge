@@ -1,0 +1,45 @@
+🚀 **Day 14/90 – Linux & DevOps Challenge**
+
+Today I focused on **Linux Networking Fundamentals**, one of the core skills every DevOps engineer needs.
+
+### 📚 Topics I Learned
+
+* 🌐 OSI Model vs TCP/IP Model
+* 📡 IP Address and Network Basics
+* 🔄 TCP vs UDP
+* 🔍 DNS (Domain Name System)
+* 🔒 HTTP vs HTTPS
+
+### 💻 Hands-on Commands Practiced
+
+* `hostname -I`
+* `ip addr`
+* `ping`
+* `traceroute`
+* `ss -tulpn`
+* `dig`
+* `nslookup`
+* `curl -I`
+* `netstat`
+
+### 🛠️ What I Practiced
+
+* Checked my system's IP address
+* Tested internet connectivity using `ping`
+* Verified DNS resolution
+* Checked listening ports and active services
+* Tested HTTP responses with `curl`
+* Learned how to troubleshoot basic network issues step by step
+
+### 🎯 Key Takeaways
+
+* Networking is the backbone of Linux and DevOps.
+* Understanding TCP/IP and DNS makes troubleshooting much easier.
+* Tools like `ping`, `ss`, `curl`, and `dig` provide quick insights into connectivity and service health.
+* A structured troubleshooting approach helps identify problems faster.
+
+Every day I'm building a stronger foundation in Linux and DevOps by learning both the concepts and the practical commands.
+
+Looking forward to the next challenge! 🚀🐧
+
+#90DaysOfDevOps #Linux #Networking #DevOps #CloudComputing #AWS #LearningInPublic #OpenSource #GitHub #TechJourney
