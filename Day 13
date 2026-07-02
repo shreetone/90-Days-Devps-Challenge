@@ -1,0 +1,39 @@
+🚀 **Day 13/90 – Linux & DevOps Challenge**
+
+Today I explored **Linux Logical Volume Manager (LVM)** and learned how it provides flexible storage management in Linux.
+
+### Topics I Learned
+
+✅ What is LVM and why it's used in production
+✅ Physical Volume (PV)
+✅ Volume Group (VG)
+✅ Logical Volume (LV)
+✅ Creating and mounting a logical volume
+✅ Extending storage without repartitioning disks
+
+### Commands Practiced
+
+* `lsblk`
+* `pvs`
+* `vgs`
+* `lvs`
+* `pvcreate`
+* `vgcreate`
+* `lvcreate`
+* `mkfs.ext4`
+* `mount`
+* `lvextend`
+* `resize2fs`
+
+### Key Takeaways
+
+* LVM provides flexible storage management.
+* Storage can be extended without reinstalling the operating system.
+* Understanding LVM is important for managing production servers and cloud environments.
+* Proper volume management helps reduce downtime when storage requirements increase.
+
+Every day I'm improving my Linux and DevOps skills by learning both the concepts and the practical commands behind them.
+
+Looking forward to learning more and building real-world DevOps projects! 🚀🐧
+
+#90DaysOfDevOps #Linux #LVM #DevOps #CloudComputing #AWS #OpenSource #LearningInPublic #GitHub #TechJourney
